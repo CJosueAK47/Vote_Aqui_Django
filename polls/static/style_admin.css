@@ -1,0 +1,15 @@
+#site-name {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilo para o link */
+#site-name a {
+  text-decoration: none;
+  color: #007bff; /* Azul */
+}
+
+/* Estilo para o link quando passa o mouse por cima */
+#site-name a:hover {
+  color: #0056b3; /* Azul mais escuro */
+}

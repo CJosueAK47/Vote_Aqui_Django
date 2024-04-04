@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+{% load static %}
+    <link rel="stylesheet"  href="{% static 'style_admin.css' %}">
+
+{% block title %}{% if title %}{{ title }} | {% endif %}{{ site_title|default:_('Django administration') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Página do Administrador</a></h1>
+{% endblock %}

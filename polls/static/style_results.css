@@ -1,0 +1,64 @@
+/* style_results.css */
+
+/* Estilo para o título */
+h1 {
+  font-size: 24px;
+  color: rgb(0, 75, 35);
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+}
+.cabecalho{
+  background-color: rgb(0, 75, 35);
+  color: aliceblue;
+  text-align: center;
+}
+
+/* Estilo para a lista de escolhas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+  border: 2px solid rgb(231, 243, 237);
+  text-align: center;
+}
+
+/* Estilo para o link "Votar Novamente" */
+.botoes{
+  text-align: center;
+}
+.botoes a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(0, 75, 35);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Estilo para o link "Votar Novamente" quando passa o mouse por cima */
+a:hover {
+  background-color: rgb(91, 193, 140);
+}
+
+/* Estilo para o link "Voltar ao Início" */
+a.return-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilo para o link "Voltar ao Início" quando passa o mouse por cima */
+a.return-home:hover {
+  background-color: #5a6268;
+}

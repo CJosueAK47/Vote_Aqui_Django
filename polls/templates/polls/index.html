@@ -1,0 +1,24 @@
+{% load static %}
+  <link rel="stylesheet" href="{% static 'style_index.css' %}">
+
+
+  {% if latest_question_list %}
+  <div class="cabecalho">
+      <h1>Vote Aqui</h1>
+      <h5>Opine sobre os assuntos e veja o número de votações</h5>
+  </div>
+  <ul>
+  {% for question in latest_question_list %}
+      <li>
+          <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+          {% with most_voted_choice=question.most_voted_choice %}
+              {% if most_voted_choice %}
+                  <span class="most-voted">Mais votada: {{ most_voted_choice.choice_text }} ({{ most_voted_choice.votes }} votos)</span>
+              {% endif %}
+          {% endwith %}
+      </li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No polls are available.</p>
+{% endif %}
